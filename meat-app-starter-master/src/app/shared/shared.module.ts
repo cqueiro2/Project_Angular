@@ -7,12 +7,13 @@ import {RadioComponent} from './radio/radio.component'
 import {RatingComponent} from './rating/rating.component'
 import { ShoppingCartService } from 'app/restaurant-detail/shopping-cart/shopping-cart.service'
 import { RestaurantsService } from 'app/restaurants/restaurants.service'
-import { OrderService } from 'app/order/order.service'
+import { OrderService } from 'app/order/order.service';
+import { SnackbarComponent } from './messages/snackbar/snackbar.component'
 
 @NgModule({
-    declarations: [InputComponent, RadioComponent, RatingComponent],
+    declarations: [InputComponent, RadioComponent, RatingComponent, SnackbarComponent],
     imports:[CommonModule, FormsModule, ReactiveFormsModule],
-    exports:[InputComponent, RadioComponent, 
+    exports:[InputComponent, RadioComponent, SnackbarComponent,
                   RatingComponent, CommonModule,
                   FormsModule, ReactiveFormsModule]
 })
