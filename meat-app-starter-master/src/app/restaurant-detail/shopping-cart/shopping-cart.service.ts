@@ -9,7 +9,7 @@ import { NotificationService } from '../../shared/messages/notification.service'
 export class ShoppingCartService {
     items: CartItem[] = []
 
-    constructor(private notificationService : NotificationService){}
+    constructor(private notificationService: NotificationService){}
 
     clear(){
      this.items = []
