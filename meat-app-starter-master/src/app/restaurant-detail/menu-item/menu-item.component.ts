@@ -18,7 +18,7 @@ import { MenuItem } from "./menu-item.model";
 })
 export class MenuItemComponent implements OnInit {
 
-  menuItemState = 'reeady'
+  menuItemState = 'ready'
   
   @Input() menuItem: MenuItem
   @Output() add = new EventEmitter()
